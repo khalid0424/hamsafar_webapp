@@ -1,0 +1,7 @@
+<h2>Сафари шумо</h2>
+<ul>
+    {% for hamsafar in hamsafars %}
+        <li>{{ hamsafar.name }}: аз {{ hamsafar.start_location }} то {{ hamsafar.destination }} дар санаи {{ hamsafar.date }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'create_hamsafar' %}">Ҳамсафари нав илова кунед</a>

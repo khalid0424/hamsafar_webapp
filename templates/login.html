@@ -1,0 +1,7 @@
+<h2>Вуруд</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Вуруд</button>
+</form>
+<a href="{% url 'signup' %}">Бақайдгирӣ</a>
